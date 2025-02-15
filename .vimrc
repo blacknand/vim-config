@@ -3,6 +3,14 @@ set relativenumber		" show relative line numbers
 set number			" set current line number
 set clipboard=unnamedplus	" copy to the clipboard by default
 
+" autocomplete {}, (), "", '' and ``
+inoremap { {}<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ` ``<left>
+
 " setup vim plugin manager
 call plug#begin('~/.vim/plugged')
 
